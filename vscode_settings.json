@@ -1,0 +1,257 @@
+{
+	/* =============== UI SETTINGS =============== */
+	"workbench.activityBar.visible": true,
+	"window.title": "${appName}",
+	"breadcrumbs.enabled": true,
+	"editor.bracketPairColorization.enabled": true,
+	// "window.zoomLevel": -1,
+	"explorer.sortOrder": "type",
+	"workbench.editor.highlightModifiedTabs": true,
+	"workbench.list.smoothScrolling": true,
+	"terminal.integrated.defaultProfile.windows": "PowerShell",
+	"workbench.iconTheme": "material-icon-theme",
+	"terminal.integrated.fontFamily": "'FiraMono Nerd Font'",
+	"terminal.integrated.fontSize": 14,
+	"workbench.tree.renderIndentGuides": "none",
+	"workbench.tree.indent": 20,
+	"css.lint.duplicateProperties": "ignore",
+	"git.autofetch": true,
+	"material-icon-theme.hidesExplorerArrows": false,
+	"workbench.colorCustomizations": {
+		"editor.background": "#010409"
+	},
+	/* =============== Screencast Settings =============== */
+	"workbench.colorTheme": "GitHub Dark Default",
+	/* =============== Emmet Settings =============== */
+	"emmet.triggerExpansionOnTab": true,
+	/* =============== Editor Settings =============== */
+	"editor.renderWhitespace": "selection",
+	"editor.tabSize": 2,
+	"editor.lineNumbers": "relative",
+	"editor.lineHeight": 29,
+	"editor.wordWrap": "on",
+	"editor.fontSize": 14,
+	"editor.guides.indentation": false,
+	"editor.guides.highlightActiveIndentation": false,
+	"editor.minimap.enabled": false,
+	"editor.cursorSmoothCaretAnimation": true,
+	"editor.cursorStyle": "line",
+	"editor.letterSpacing": 0.2,
+	"editor.renderLineHighlight": "gutter",
+	"editor.matchBrackets": "near",
+	"editor.fontFamily": "'Fira Code', 'JetBrains Mono','Cousine', 'Courier New', monospace",
+	"editor.fontLigatures": true,
+	"editor.smoothScrolling": true,
+	"editor.cursorBlinking": "solid",
+	"editor.inlineSuggest.enabled": true,
+	"eslint.format.enable": true,
+	/* =============== Language formatters/Settings =============== */
+	"[jsonc]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "dbaeumer.vscode-eslint"
+	},
+	"editor.formatOnSave": true,
+	/* =============== Misc Settings =============== */
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	/* =============== Vim Settings =============== */
+	"vim.leader": "<space>",
+	"vim.cursorStylePerMode.normal": "block",
+	"vim.easymotion": false,
+	"vim.surround": true,
+	"vim.incsearch": true,
+	"vim.useSystemClipboard": true,
+	"vim.useCtrlKeys": true,
+	"vim.hlsearch": true,
+	"vim.sneak": true,
+	"vim.handleKeys": {
+		"<C-v>": false,
+		"<C-s>": false,
+		"<C-y>": false,
+		"<C-z>": false,
+		"<C-p>": false,
+		"<C-q>": false,
+		"<C-n>": false,
+		"<C-a>": false,
+		"<C-f>": false,
+	},
+	"vim.insertModeKeyBindings": [
+		{
+			"before": [
+				"j",
+				"k"
+			],
+			"after": [
+				"<Esc>"
+			]
+		}
+	],
+	"vim.visualModeKeyBindingsNonRecursive": [
+		{
+			"before": [
+				"<leader>",
+				"d"
+			],
+			"after": [
+				"d",
+				"d"
+			]
+		}
+	],
+	"vim.normalModeKeyBindings": [
+		{
+			"before": [
+				"<leader>",
+				"d"
+			],
+			"after": [
+				"d",
+				"d"
+			]
+		},
+		{
+			"before": [
+				"<tab>"
+			],
+			"commands": [
+				"workbench.action.nextEditor"
+			]
+		},
+		{
+			"before": [
+				"<S-tab>"
+			],
+			"commands": [
+				"workbench.action.previousEditor"
+			]
+		}
+	],
+	"vim.normalModeKeyBindingsNonRecursive": [
+		{
+			"before": [
+				"<leader>",
+				"t"
+			],
+			"commands": [
+				"workbench.action.toggleSidebarVisibility"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"d"
+			],
+			"after": [
+				"d",
+				"d"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"n"
+			],
+			"commands": [
+				":nohl"
+			]
+		},
+		{
+			"before": [
+				"leader",
+				"w"
+			],
+			"commands": [
+				"workbench.action.files.save"
+			]
+		},
+		{
+			"before": [
+				"leader",
+				"q"
+			],
+			"commands": [
+				":q"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"e"
+			],
+			"commands": [
+				"workbench.action.toggleSidebarVisibility"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"f"
+			],
+			"after": [
+				"/"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"v"
+			],
+			"commands": [
+				"workbench.action.splitEditor"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"h"
+			],
+			"after": [
+				"<C-w>",
+				"h"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"l"
+			],
+			"after": [
+				"<C-w>",
+				"l"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"j"
+			],
+			"after": [
+				"G"
+			]
+		},
+		{
+			"before": [
+				"<leader>",
+				"k"
+			],
+			"after": [
+				"g",
+				"g"
+			]
+		}
+	],
+}
+
