@@ -1,7 +1,7 @@
 {
 	/* =============== UI SETTINGS =============== */
-	"workbench.activityBar.visible": true,
-	"window.title": "${appName}",
+	"workbench.activityBar.visible": false,
+	"window.title": "${folderName}",
 	"breadcrumbs.enabled": true,
 	"editor.bracketPairColorization.enabled": true,
 	// "window.zoomLevel": -1,
@@ -50,7 +50,7 @@
 		"editor.defaultFormatter": "vscode.json-language-features"
 	},
 	"[javascript]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode"
+		"editor.defaultFormatter": "dbaeumer.vscode-eslint"
 	},
 	"[javascriptreact]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -253,5 +253,9 @@
 			]
 		}
 	],
+	"[typescript]": {
+		"editor.defaultFormatter": "dbaeumer.vscode-eslint"
+	},
+	"workbench.startupEditor": "none",
 }
 

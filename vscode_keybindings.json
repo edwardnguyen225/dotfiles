@@ -1,0 +1,17 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+shift+x",
+    "command": "workbench.view.extensions",
+    "when": "viewContainer.workbench.view.extensions.enabled"
+  },
+  {
+    "key": "cmd+n",
+    "command": "fileutils.newFileAtRoot"
+  },
+  {
+    "key": "cmd+f11",
+    "command": "workbench.action.toggleFullScreen"
+  },
+]
+
