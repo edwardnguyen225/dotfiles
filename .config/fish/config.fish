@@ -57,4 +57,3 @@ if test -f $LOCAL_CONFIG
 end
 
 nvm use default --silence
-
