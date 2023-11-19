@@ -7,6 +7,7 @@ set -g theme_color_scheme terminal-dark
 set -g fish_prompt_pwd_dir_length 1
 set -g theme_display_user yes
 set -g theme_hostname always
+# scheme set catppuccin
 scheme set tokyonight
 
 # aliases
@@ -35,6 +36,7 @@ set -gx PATH $GOPATH/bin $PATH
 
 # dotfiles
 alias config '/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+set -g TERM xterm-256color
 
 # NVM
 function __check_rvm --on-variable PWD --description 'Do nvm stuff'
