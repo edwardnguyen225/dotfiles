@@ -1,14 +1,15 @@
+set -x LANG en_US.UTF-8
+
 set fish_greeting ""
 
-set -gx TERM xterm-256color
+set -gx TERM screen-256color
 
 # theme
 set -g theme_color_scheme terminal-dark
 set -g fish_prompt_pwd_dir_length 1
 set -g theme_display_user yes
 set -g theme_hostname always
-# scheme set catppuccin
-scheme set tokyonight
+fish_config theme choose "Rosé Pine Moon"
 
 # aliases
 alias ls "ls -p -G"
@@ -36,7 +37,6 @@ set -gx PATH $GOPATH/bin $PATH
 
 # dotfiles
 alias config '/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-set -g TERM xterm-256color
 
 # NVM
 function __check_rvm --on-variable PWD --description 'Do nvm stuff'
@@ -61,3 +61,8 @@ set LOCAL_CONFIG (dirname (status --current-filename))/config-local.fish
 if test -f $LOCAL_CONFIG
     source $LOCAL_CONFIG
 end
+
+# Ulimit
+ulimit -n 8096
+
+status --is-interactive; and /opt/homebrew//bin/rbenv init - fish | source
