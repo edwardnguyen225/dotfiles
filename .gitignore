@@ -124,6 +124,8 @@ Session.vim
 .vim/syntax/Dockerfile.vim
 .vim/snippets/
 
+lazy-lock.json
+
 # Xcode
 build/
 *.pbxuser
