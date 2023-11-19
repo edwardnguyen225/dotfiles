@@ -1,0 +1,17 @@
+require("notify").setup({
+  background_colour = "#000000",
+})
+
+return {
+  {
+
+    "folke/tokyonight.nvim",
+    opts = {
+      transparent = true,
+      styles = {
+        sidebars = "transparent",
+        floats = "transparent",
+      },
+    },
+  },
+}
