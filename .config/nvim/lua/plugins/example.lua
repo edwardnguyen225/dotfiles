@@ -9,17 +9,6 @@ if true then return {} end
 -- * disable/enabled LazyVim plugins
 -- * override the configuration of LazyVim plugins
 return {
-  -- add gruvbox
-  { "ellisonleao/gruvbox.nvim" },
-
-  -- Configure LazyVim to load gruvbox
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "tokyonight",
-    },
-  },
-
   -- change trouble config
   {
     "folke/trouble.nvim",
@@ -44,8 +33,7 @@ return {
     dependencies = { "hrsh7th/cmp-emoji" },
     ---@param opts cmp.ConfigSchema
     opts = function(_, opts)
-      local cmp = require("cmp")
-      opts.sources = cmp.config.sources(vim.list_extend(opts.sources, { { name = "emoji" } }))
+      table.insert(opts.sources, { name = "emoji" })
     end,
   },
 

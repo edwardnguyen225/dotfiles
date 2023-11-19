@@ -1,9 +1,19 @@
 return {
-  { "ellisonleao/gruvbox.nvim", enabled = false },
+  { "ellisonleao/gruvbox.nvim" },
+
+  -- TODO: Make rose-pine transparent
+  {
+    "rose-pine/neovim",
+    priority = 1000,
+    name = "rose-pine",
+    opts = {
+      variant = "moon",
+    },
+  },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "tokyonight",
+      colorscheme = "rose-pine",
     },
   },
 }
