@@ -124,7 +124,7 @@ Session.vim
 .vim/syntax/Dockerfile.vim
 .vim/snippets/
 
-lazy-lock.json
+.config/nvim/lazy-lock.json
 
 # Xcode
 build/
