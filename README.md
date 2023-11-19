@@ -9,7 +9,7 @@
 
 Install config tracking in your $HOME by running:
 
-    curl -Lks https://bitbucket.org/durdn/cfg/raw/master/.bin/install.sh | /bin/bash
+    curl -Lks https://raw.githubusercontent.com/edwardnguyen225/dotfiles/main/.bin/install.sh | /bin/bash
 
 This requires the public key of the machine where the setup is being installed
 to be registered as authorized on Bitbucket.
