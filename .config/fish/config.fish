@@ -35,6 +35,10 @@ set -gx PATH node_modules/.bin $PATH
 set -g GOPATH $HOME/go
 set -gx PATH $GOPATH/bin $PATH
 
+# platform-tools
+set -g PLATFORM $HOME/Documents/DivestOS/platform-tools
+set -gx PATH $PLATFORM $PATH
+
 # dotfiles
 alias config '/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
