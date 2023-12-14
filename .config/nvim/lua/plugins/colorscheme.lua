@@ -1,6 +1,15 @@
 return {
   { "ellisonleao/gruvbox.nvim" },
-
+  {
+    "tokyonight.nvim",
+    opts = {
+      transparent = true,
+      styles = {
+        sidebars = "transparent",
+        floats = "transparent",
+      },
+    },
+  },
   -- TODO: Make rose-pine transparent
   {
     "rose-pine/neovim",
@@ -13,7 +22,12 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "rose-pine",
+      colorscheme = "tokyonight",
+      transparent = true,
+      styles = {
+        sidebars = "transparent",
+        floats = "transparent",
+      },
     },
   },
 }
