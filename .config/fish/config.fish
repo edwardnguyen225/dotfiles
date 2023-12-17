@@ -52,6 +52,8 @@ function __check_rvm --on-variable PWD --description 'Do nvm stuff'
     end
 end
 
+nvm use lts --silent
+
 switch (uname)
     case Darwin
         source (dirname (status --current-filename))/config-osx.fish
