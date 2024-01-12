@@ -19,6 +19,10 @@ alias lla "ll -A"
 alias cl clear
 alias g git
 alias lg lazygit
+alias fp "fish --private"
+alias copilot "gh copilot"
+alias gcs "gh copilot suggest"
+alias gce "gh copilot explain"
 command -qv nvim && alias vim nvim
 
 set -gx EDITOR nvim

@@ -5,6 +5,21 @@
 - clean: ["~", "~/.config"]
 
 - link:
+    ~/.config/alacritty/: config/alacritty
+    ~/.config/btop/: config/btop
+    ~/.config/fish/: config/fish
+    ~/.config/gh/: config/gh
+    ~/.config/gh-copilot/: config/gh-copilot
+    ~/.config/github-copilot/: config/github-copilot
+    ~/.config/htop/: config/htop
+    ~/.config/iterm2/: config/iterm2
+    ~/.config/karabiner/: config/karabiner
+    ~/.config/kitty/: config/kitty
+    ~/.config/lazygit/: config/lazygit
+    ~/.config/nvim/: config/nvim
+    ~/.config/tmux/: config/tmux
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
+    - mv ~/.config/fish/ ~/.config/fish-bkp/
+    - cp -R ./config/fish/ ~/.config/fish/
