@@ -1,19 +1,40 @@
 # Dotfiles for [@edwardnguyen225](http://www.facebook.com/trinhan.vn)
 
-## Requirements
 
-- Git
-- Curl
+This repository contains my personal dotfiles. They are managed using [Dotbot](https://github.com/anishathalye/dotbot).
 
-## Install
+## Structure
 
-Install config tracking in your $HOME by running:
+The repository is structured as follows:
 
-    curl -Lks https://raw.githubusercontent.com/edwardnguyen225/dotfiles/main/.bin/install.sh | /bin/bash
+- `config/`: Contains configuration files for various tools like tmux, neovim, alacritty, etc.
+- `dotbot/`: Contains the Dotbot tool and its configuration.
+- `install`: A script to install the dotfiles using Dotbot.
 
-This requires the public key of the machine where the setup is being installed
-to be registered as authorized on Bitbucket.
+## Installation
 
-## Credit
+To install the dotfiles, run the following command in the root directory of the repository:
 
-This repo is based on [durdn dotfile](https://bitbucket.org/durdn/cfg/src/master/).
+```sh
+./install
+```
+
+This will symlink the appropriate files to your home directory. Any existing config files will be backed up.
+
+## Configurations
+
+This repository contains configurations for the following tools:
+
+- [alacritty](./config/alacritty/)
+- [btop](./config/btop/)
+- [fish](./config/fish/)
+- [gh](./config/gh/)
+- [gh-copilot](./config/gh-copilot/)
+- [github-copilot](./config/github-copilot/)
+- [htop](./config/htop/)
+- [iterm2](./config/iterm2/)
+- [karabiner](./config/karabiner/)
+- [kitty](./config/kitty/)
+- [lazygit](./config/lazygit/)
+- [nvim](./config/nvim/)
+- [tmux](./config/tmux/)
