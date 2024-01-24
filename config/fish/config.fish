@@ -9,7 +9,9 @@ set -g theme_color_scheme terminal-dark
 set -g fish_prompt_pwd_dir_length 1
 set -g theme_display_user yes
 set -g theme_hostname always
-fish_config theme choose "Rosé Pine Moon"
+
+fish_config theme choose tokyonight_night
+# fish_config theme choose "Rosé Pine Moon"
 
 # aliases
 alias ls "ls -p -G"
