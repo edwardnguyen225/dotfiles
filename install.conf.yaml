@@ -7,7 +7,7 @@
 - link:
     ~/.config/alacritty/: config/alacritty
     ~/.config/btop/: config/btop
-    ~/.config/fish/: config/fish
+    # ~/.config/fish/: config/fish
     ~/.config/gh/: config/gh
     ~/.config/gh-copilot/: config/gh-copilot
     ~/.config/github-copilot/: config/github-copilot
