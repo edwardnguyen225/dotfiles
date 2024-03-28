@@ -18,6 +18,13 @@
     ~/.config/lazygit/: config/lazygit
     ~/.config/nvim/: config/nvim
     ~/.config/tmux/: config/tmux
+    ~/.bash_history: .bash_history
+    ~/.bash_profile: .bash_profile
+    ~/.bashrc: .bashrc
+    ~/.p10k.zsh: .p10k.zsh
+    ~/.zprofile: .zprofile
+    ~/.zsh_history: .zsh_history
+    ~/.zshrc: .zshrc
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
