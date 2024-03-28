@@ -160,3 +160,7 @@ fish/fish_variables.x86_64
 # Karabiner
 .config/karabiner/automatic_backups
 
+# Github-copilot
+github-copilot/hosts.json
+
+config/github-copilot/hosts.json
