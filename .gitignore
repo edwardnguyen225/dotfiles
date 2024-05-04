@@ -164,3 +164,5 @@ fish/fish_variables.x86_64
 github-copilot/hosts.json
 
 config/github-copilot/hosts.json
+config/btop/btop.log
+config/karabiner/automatic_backups
