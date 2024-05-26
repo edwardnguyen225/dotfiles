@@ -7,7 +7,7 @@ padding.y = 10
 
 decorations = "buttonless"
 
-opacity = 0.8
+opacity = 0.7
 blur = true
 
 [[colors.indexed_colors]]
