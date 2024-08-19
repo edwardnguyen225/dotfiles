@@ -15,7 +15,6 @@ return {
         "php",
         "scss",
         "sql",
-        "svelte",
       })
     end,
   },

@@ -11,7 +11,6 @@ return {
         "shfmt",
         "tailwindcss-language-server",
         "typescript-language-server",
-        "svelte-language-server",
         "css-lsp",
       })
     end,
