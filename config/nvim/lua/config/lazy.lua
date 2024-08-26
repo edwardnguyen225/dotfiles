@@ -18,7 +18,8 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.tailwind" },
     { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
     -- Copilot
-    -- { import = "lazyvim.plugins.extras.coding.copilot" },
+    { import = "lazyvim.plugins.extras.coding.copilot" },
+
     -- Harpoon2
     { import = "lazyvim.plugins.extras.editor.harpoon2" },
     -- import/override with your plugins
