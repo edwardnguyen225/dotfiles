@@ -11,9 +11,9 @@ function base16-atlas -d "base16 Atlas theme"
     set color01 "ff/5a/67" # Base 08 - Red
     set color02 "7f/c0/6e" # Base 0B - Green
     set color03 "ff/cc/1b" # Base 0A - Yellow
-    set color04 "5d/d7/b9" # Base 0D - Blue
+    set color04 "14/74/7e" # Base 0D - Blue
     set color05 "9a/70/a4" # Base 0E - Magenta
-    set color06 "14/74/7e" # Base 0C - Cyan
+    set color06 "5d/d7/b9" # Base 0C - Cyan
     set color07 "a1/a1/9a" # Base 05 - White
     set color08 "6c/8b/91" # Base 03 - Bright Black
     set color09 $color01 # Base 08 - Bright Red
@@ -82,10 +82,10 @@ function base16-atlas -d "base16 Atlas theme"
 
     if test -z $base16_fish_shell_disable_prompt_colors
         set -gx fish_color_normal normal
-        set -gx fish_color_command "5dd7b9" blue
+        set -gx fish_color_command "14747e" blue
         set -gx fish_color_quote "7fc06e" green
         set -gx fish_color_redirection "ffcc1b" yellow
-        set -gx fish_color_end "14747e" cyan
+        set -gx fish_color_end "5dd7b9" cyan
         set -gx fish_color_error "ff5a67" red
         set -gx fish_color_param "e6e6dc" cyan
         set -gx fish_color_comment "6c8b91" brblack
@@ -93,8 +93,8 @@ function base16-atlas -d "base16 Atlas theme"
         set -gx fish_color_selection "a1a19a" white --bold --background=brblack
         set -gx fish_color_search_match "ffcc1b" bryellow --background=brblack
         set -gx fish_color_history_current --bold
-        set -gx fish_color_operator "14747e" cyan
-        set -gx fish_color_escape "14747e" cyan
+        set -gx fish_color_operator "5dd7b9" cyan
+        set -gx fish_color_escape "5dd7b9" cyan
         set -gx fish_color_cwd "7fc06e" green
         set -gx fish_color_cwd_root "ff5a67" red
         set -gx fish_color_valid_path --underline

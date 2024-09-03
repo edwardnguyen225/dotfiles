@@ -1,7 +1,7 @@
 function ssh_edward
-  set ssh_file ~/.ssh/id_ed25519_edward
-  ssh-agent -k
+    set ssh_file ~/.ssh/id_ed25519_trinhan_dev
+    ssh-agent -k
 
-  eval $(ssh-agent -c) && ssh-add --apple-use-keychain $ssh_file
-  echo 'New SSH is added with SSH keychain for edwardnguyen225'
+    eval $(ssh-agent -c) && ssh-add --apple-use-keychain $ssh_file
+    echo 'New SSH is added with SSH keychain for edwardnguyen225'
 end

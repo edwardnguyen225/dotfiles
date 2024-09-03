@@ -10,7 +10,7 @@ set -g fish_prompt_pwd_dir_length 1
 set -g theme_display_user yes
 set -g theme_hostname always
 
-fish_config theme choose tokyonight_moon
+fish_config theme choose tokyonight_night
 # fish_config theme choose "Rosé Pine Moon"
 
 # aliases
@@ -49,6 +49,7 @@ set -gx PATH $PLATFORM $PATH
 alias config '/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 # NVM
+set -gx nvm_default_version 18
 function __check_rvm --on-variable PWD --description 'Do nvm stuff'
     status --is-command-substitution; and return
 
@@ -78,3 +79,7 @@ end
 ulimit -n 8096
 
 status --is-interactive; and /opt/homebrew//bin/rbenv init - fish | source
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
