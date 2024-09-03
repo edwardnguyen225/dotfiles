@@ -479,6 +479,15 @@
                         "product_id": 45890,
                         "vendor_id": 1133
                     }
+                },
+                {
+                    "disable_built_in_keyboard_if_exists": true,
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": true,
+                        "product_id": 591,
+                        "vendor_id": 1452
+                    }
                 }
             ],
             "name": "Default profile + disable built-in",
