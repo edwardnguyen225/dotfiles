@@ -1,0 +1,14 @@
+{
+  "keyMappings": "# Insert your preferred key mappings here.\n\nmap H previousTab\nmap L nextTab\nmap J goBack\nmap K goForward",
+  "settingsVersion": "2.1.2",
+  "exclusionRules": [
+    {
+      "passKeys": "",
+      "pattern": "https?://mail.google.com/*"
+    },
+    {
+      "passKeys": "1234567890m",
+      "pattern": "https?://www.youtube.com/*"
+    }
+  ]
+}
