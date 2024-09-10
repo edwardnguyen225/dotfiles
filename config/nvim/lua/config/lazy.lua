@@ -13,15 +13,25 @@ require("lazy").setup({
     -- import any extras modules here
     { import = "lazyvim.plugins.extras.linting.eslint" },
     { import = "lazyvim.plugins.extras.formatting.prettier" },
-    { import = "lazyvim.plugins.extras.lang.typescript" },
-    { import = "lazyvim.plugins.extras.lang.json" },
-    { import = "lazyvim.plugins.extras.lang.tailwind" },
-    { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
-    -- Copilot
+
+    -- Coding
+    { import = "lazyvim.plugins.extras.coding.copilot-chat" },
     { import = "lazyvim.plugins.extras.coding.copilot" },
 
-    -- Harpoon2
+    -- Editor
     { import = "lazyvim.plugins.extras.editor.harpoon2" },
+    { import = "lazyvim.plugins.extras.editor.mini-diff" },
+
+    -- import languages
+    { import = "lazyvim.plugins.extras.lang.git" },
+    { import = "lazyvim.plugins.extras.lang.typescript" },
+    { import = "lazyvim.plugins.extras.lang.svelte" },
+    { import = "lazyvim.plugins.extras.lang.json" },
+    { import = "lazyvim.plugins.extras.lang.tailwind" },
+
+    -- Other utils
+    { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
+
     -- import/override with your plugins
     { import = "plugins" },
   },

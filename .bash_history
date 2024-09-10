@@ -96,3 +96,8 @@ clear
 neovim --version
 clear
 sudo chsh -s /bin/zsh
+sudo rm -rf ~/.battery
+sudo rm -rf ~/.battery
+binfolder=/usr/local/bin
+sudo rm -v "$binfolder/smc" "$binfolder/battery"
+fish
