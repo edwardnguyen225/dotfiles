@@ -1,5 +1,5 @@
 function ssh_edward
-    set ssh_file ~/.ssh/id_ed25519_trinhan_dev
+    set ssh_file ~/.ssh/id_ed25519_edwardnguyen225
     ssh-agent -k
 
     eval $(ssh-agent -c) && ssh-add --apple-use-keychain $ssh_file
