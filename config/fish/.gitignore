@@ -1,0 +1,9 @@
+config-local.fish
+fish_variables*
+fish_history
+fish_read_history
+fishd.*
+bin
+
+functions/
+!functions/ssh_*
