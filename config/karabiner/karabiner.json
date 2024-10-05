@@ -235,8 +235,7 @@
                     }
                 }
             ],
-            "name": "Default profile",
-            "selected": true
+            "name": "Default profile"
         },
         {
             "complex_modifications": {
@@ -482,7 +481,8 @@
                     }
                 }
             ],
-            "name": "Default profile + disable built-in"
+            "name": "Default profile + disable built-in",
+            "selected": true
         }
     ]
 }

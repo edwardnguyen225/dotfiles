@@ -21,6 +21,7 @@ alias lla "ll -A"
 alias cl clear
 alias g git
 alias lg lazygit
+alias r ranger
 alias fp "fish --private"
 alias copilot "gh copilot"
 alias gcs "gh copilot suggest"
