@@ -31,6 +31,9 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.tailwind" },
     { import = "lazyvim.plugins.extras.lang.markdown" },
 
+    -- Tests
+    { import = "lazyvim.plugins.extras.test.core" },
+
     -- Other utils
     { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
 
