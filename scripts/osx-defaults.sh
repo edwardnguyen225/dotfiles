@@ -71,10 +71,11 @@ apply_osx_system_defaults() {
   defaults write com.apple.dock "mru-spaces" -bool false
 
   # Set Dock autohide
+  defaults write com.apple.dock orientation -string left
   defaults write com.apple.dock autohide -bool true
-  defaults write com.apple.dock largesize -float 128
   defaults write com.apple.dock "minimize-to-application" -bool true
   defaults write com.apple.dock tilesize -float 32
+  defaults write com.apple.dock largesize -float 64
 
   # Rectangle
   # defaults write com.knollsoft.Rectangle curtainChangeSize -int 2
