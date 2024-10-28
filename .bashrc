@@ -7,3 +7,4 @@ export PATH="$PATH:$HOME/.rvm/bin"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 . "$HOME/.cargo/env"
 alias config='/usr/bin/git --git-dir=/Users/hirito/.cfg/ --work-tree=/Users/hirito'
+. "/Users/ntnh/.deno/env"

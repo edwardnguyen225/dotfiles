@@ -1,3 +1,5 @@
+# Add deno completions to search path
+if [[ ":$FPATH:" != *":/Users/ntnh/.zsh/completions:"* ]]; then export FPATH="/Users/ntnh/.zsh/completions:$FPATH"; fi
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -154,3 +156,4 @@ eval "$(fzf --zsh)"
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
+. "/Users/ntnh/.deno/env"
