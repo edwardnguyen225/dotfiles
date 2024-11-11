@@ -18,6 +18,9 @@
     ~/.config/lazygit/: config/lazygit
     ~/.config/nvim/: config/nvim
     ~/.config/tmux/: config/tmux
+    ~/.config/sketchybar/: config/sketchybar
+    ~/.config/borders/: config/borders
+    ~/.config/ranger/: config/ranger
     ~/.bash_history: .bash_history
     ~/.bash_profile: .bash_profile
     ~/.bashrc: .bashrc

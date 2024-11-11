@@ -241,6 +241,22 @@
             "complex_modifications": {
                 "rules": [
                     {
+                        "description": "Map ctrl + [ to escape",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "open_bracket",
+                                    "modifiers": {
+                                        "mandatory": ["control"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [{ "key_code": "escape" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Map Left Option plus h/j/k/l to Arrows",
                         "manipulators": [
                             {
@@ -479,6 +495,16 @@
                         "product_id": 591,
                         "vendor_id": 1452
                     }
+                },
+                {
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": true,
+                        "product_id": 34051,
+                        "vendor_id": 2652
+                    },
+                    "ignore": false,
+                    "mouse_flip_vertical_wheel": true
                 }
             ],
             "name": "Default profile + disable built-in",
