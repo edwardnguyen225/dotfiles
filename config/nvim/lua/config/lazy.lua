@@ -14,9 +14,11 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.linting.eslint" },
     { import = "lazyvim.plugins.extras.formatting.prettier" },
 
+    -- ai
+    { import = "lazyvim.plugins.extras.ai.codeium" },
+    { import = "lazyvim.plugins.extras.ai.copilot-chat" },
+
     -- Coding
-    { import = "lazyvim.plugins.extras.coding.copilot-chat" },
-    { import = "lazyvim.plugins.extras.coding.copilot" },
     { import = "lazyvim.plugins.extras.coding.mini-surround" },
 
     -- Editor
