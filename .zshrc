@@ -157,3 +157,5 @@ eval "$(fzf --zsh)"
 # Load Angular CLI autocompletion.
 source <(ng completion script)
 . "/Users/ntnh/.deno/env"
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/ntnh/.lmstudio/bin"

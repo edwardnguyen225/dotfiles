@@ -8,3 +8,5 @@ export PATH="$PATH:$HOME/.rvm/bin"
 . "$HOME/.cargo/env"
 alias config='/usr/bin/git --git-dir=/Users/hirito/.cfg/ --work-tree=/Users/hirito'
 . "/Users/ntnh/.deno/env"
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/ntnh/.lmstudio/bin"
