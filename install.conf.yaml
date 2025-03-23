@@ -21,7 +21,6 @@
     ~/.config/sketchybar/: config/sketchybar
     ~/.config/borders/: config/borders
     ~/.config/ranger/: config/ranger
-    ~/.bash_history: .bash_history
     ~/.bash_profile: .bash_profile
     ~/.bashrc: .bashrc
     ~/.p10k.zsh: .p10k.zsh

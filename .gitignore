@@ -153,6 +153,9 @@ zsdoc/data
 # Karabiner
 .config/karabiner/automatic_backups
 
+# Bash
+.bash_history
+
 # Github-copilot
 github-copilot/hosts.json
 
