@@ -241,23 +241,22 @@
             "complex_modifications": {
                 "rules": [
                     {
-                        "description": "Map ctrl + [ to escape",
+                        "description": "Change caps_lock to control if pressed with other keys, to escape if pressed alone.",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "open_bracket",
-                                    "modifiers": {
-                                        "mandatory": ["control"],
-                                        "optional": ["any"]
-                                    }
+                                    "key_code": "caps_lock",
+                                    "modifiers": { "optional": ["any"] }
                                 },
-                                "to": [{ "key_code": "escape" }],
+                                "to": [{ "key_code": "left_control" }],
+                                "to_if_alone": [{ "key_code": "escape" }],
                                 "type": "basic"
                             }
                         ]
                     },
                     {
                         "description": "Map Left Option plus h/j/k/l to Arrows",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {
@@ -307,6 +306,7 @@
                     },
                     {
                         "description": "Mapping [left_option-{1-0,-,=} to {F1-F10,F11,F12}",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {
@@ -494,7 +494,8 @@
                         "is_pointing_device": true,
                         "product_id": 591,
                         "vendor_id": 1452
-                    }
+                    },
+                    "ignore": false
                 },
                 {
                     "identifiers": {
@@ -509,7 +510,8 @@
                 }
             ],
             "name": "Default profile + disable built-in",
-            "selected": true
+            "selected": true,
+            "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
         }
     ]
 }
