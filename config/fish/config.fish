@@ -33,17 +33,7 @@ set -gx EDITOR nvim
 set -gx PATH bin $PATH
 set -gx PATH ~/bin $PATH
 set -gx PATH ~/.local/bin $PATH
-set -gx PATH "/opt/homebrew/bin:/bin:/usr/bin" $PATH
 
-# NodeJS
-set -gx PATH node_modules/.bin $PATH
-
-# Go
-set -g GOPATH $HOME/go
-set -gx PATH $GOPATH/bin $PATH
-
-# platform-tools
-set -g PLATFORM $HOME/Documents/DivestOS/platform-tools
 set -gx PATH $PLATFORM $PATH
 
 # dotfiles
@@ -59,8 +49,6 @@ function __check_rvm --on-variable PWD --description 'Do nvm stuff'
     else
     end
 end
-
-nvm use lts --silent
 
 switch (uname)
     case Darwin
@@ -84,3 +72,6 @@ status --is-interactive; and /opt/homebrew//bin/rbenv init - fish | source
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
+
+# Added by LM Studio CLI (lms)
+set -gx PATH $PATH /Users/ntnh/.lmstudio/bin
