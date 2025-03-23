@@ -19,6 +19,7 @@
     ~/.config/nvim/: config/nvim
     ~/.config/tmux/: config/tmux
     ~/.config/sketchybar/: config/sketchybar
+    ~/.config/wezterm/: config/wezterm
     ~/.config/borders/: config/borders
     ~/.config/ranger/: config/ranger
     ~/.bash_profile: .bash_profile
