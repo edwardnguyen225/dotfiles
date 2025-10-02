@@ -69,9 +69,5 @@ ulimit -n 8096
 
 status --is-interactive; and /opt/homebrew//bin/rbenv init - fish | source
 
-# bun
-set --export BUN_INSTALL "$HOME/.bun"
-set --export PATH $BUN_INSTALL/bin $PATH
-
 # Added by LM Studio CLI (lms)
 set -gx PATH $PATH /Users/ntnh/.lmstudio/bin

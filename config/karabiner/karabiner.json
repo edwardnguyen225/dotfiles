@@ -256,7 +256,6 @@
                     },
                     {
                         "description": "Map Left Option plus h/j/k/l to Arrows",
-                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {

@@ -1,7 +1,7 @@
 return {
   -- tools
   {
-    "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
     opts = function(_, opts)
       vim.list_extend(opts.ensure_installed, {
         "stylua",
@@ -12,6 +12,7 @@ return {
         "tailwindcss-language-server",
         "typescript-language-server",
         "css-lsp",
+        "svelte-language-server",
       })
     end,
   },
@@ -22,7 +23,18 @@ return {
   {
     "neovim/nvim-lspconfig",
     opts = {
-      servers = { eslint = {} },
+      servers = { 
+        eslint = {},
+        svelte = {
+          keys = {
+            {
+              "<leader>co",
+              LazyVim.lsp.action["source.organizeImports"],
+              desc = "Organize Imports",
+            },
+          },
+        },
+      },
       setup = {
         eslint = function()
           require("lazyvim.util").lsp.on_attach(function(client)
@@ -35,5 +47,19 @@ return {
         end,
       },
     },
+  },
+
+  -- Configure TypeScript server with Svelte plugin integration
+  {
+    "neovim/nvim-lspconfig",
+    opts = function(_, opts)
+      LazyVim.extend(opts.servers.vtsls, "settings.vtsls.tsserver.globalPlugins", {
+        {
+          name = "typescript-svelte-plugin",
+          location = LazyVim.get_pkg_path("svelte-language-server", "/node_modules/typescript-svelte-plugin"),
+          enableForWorkspaceTypeScriptVersions = true,
+        },
+      })
+    end,
   },
 }

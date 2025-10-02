@@ -44,7 +44,7 @@ config.window_padding = {
 	top = 0,
 	bottom = 0,
 }
-config.macos_window_background_blur = 40
+config.macos_window_background_blur = 80
 
 -- Miscellaneous settings
 config.max_fps = 120
