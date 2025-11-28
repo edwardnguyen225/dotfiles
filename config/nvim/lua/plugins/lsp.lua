@@ -37,20 +37,13 @@ return {
       },
       setup = {
         eslint = function()
-          vim.api.nvim_create_autocmd("LspAttach", {
-            callback = function(args)
-              local client = vim.lsp.get_client_by_id(args.data.client_id)
-              if not client then
-                return
-              end
-
-              if client.name == "eslint" then
-                client.server_capabilities.documentFormattingProvider = true
-              elseif client.name == "tsserver" or client.name == "vtsls" then
-                client.server_capabilities.documentFormattingProvider = false
-              end
-            end,
-          })
+          require("lazyvim.util").on_attach(function(client, _)
+            if client.name == "eslint" then
+              client.server_capabilities.documentFormattingProvider = true
+            elseif client.name == "tsserver" then
+              client.server_capabilities.documentFormattingProvider = false
+            end
+          end)
         end,
       },
     },
