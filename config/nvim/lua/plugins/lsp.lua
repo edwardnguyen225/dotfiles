@@ -9,6 +9,7 @@ return {
         "luacheck",
         "shellcheck",
         "shfmt",
+        "biome",
         "tailwindcss-language-server",
         "typescript-language-server",
         "css-lsp",
@@ -36,14 +37,18 @@ return {
         },
       },
       setup = {
-        eslint = function()
-          require("lazyvim.util").on_attach(function(client, _)
+        eslint = function(_, opts)
+          local on_attach = opts.on_attach
+          opts.on_attach = function(client, bufnr)
+            if on_attach then
+              on_attach(client, bufnr)
+            end
             if client.name == "eslint" then
               client.server_capabilities.documentFormattingProvider = true
             elseif client.name == "tsserver" then
               client.server_capabilities.documentFormattingProvider = false
             end
-          end)
+          end
         end,
       },
     },
